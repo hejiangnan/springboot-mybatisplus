@@ -1,0 +1,21 @@
+server:
+  # 服务端口号
+  port: 9095
+
+# spring配置
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/cms?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&serverTimezone=GMT%2b8
+    username: root
+    password: root
+    hikari:
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+
+# mybatis-plus配置
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hejiangnan.mybatisplus.mapper.EqpManageMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="cn.hejiangnan.mybatisplus.entity.EqpManage">
+                    <id column="id" property="id"/>
+                    <result column="eqp_kind" property="eqpKind"/>
+                    <result column="eqp_name" property="eqpName"/>
+                    <result column="eqp_model" property="eqpModel"/>
+                    <result column="eqp_id" property="eqpId"/>
+                    <result column="related_assets" property="relatedAssets"/>
+                    <result column="eqp_status" property="eqpStatus"/>
+                    <result column="software_version" property="softwareVersion"/>
+                    <result column="register_time" property="registerTime"/>
+                    <result column="province" property="province"/>
+                    <result column="city" property="city"/>
+                    <result column="county" property="county"/>
+                    <result column="street" property="street"/>
+                    <result column="create_person" property="createPerson"/>
+                    <result column="create_time" property="createTime"/>
+                    <result column="update_person" property="updatePerson"/>
+                    <result column="update_time" property="updateTime"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, eqp_kind, eqp_name, eqp_model, eqp_id, related_assets, eqp_status, software_version, register_time, province, city, county, street, create_person, create_time, update_person, update_time
+        </sql>
+
+</mapper>
